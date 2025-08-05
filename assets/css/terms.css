@@ -1,0 +1,127 @@
+/* Terms Page Specific Styles */
+.terms-section {
+    padding: 100px 0 60px;
+    background-color: var(--bg-color);
+    transition: var(--transition);
+}
+
+.terms-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.terms-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.effective-date {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.last-updated {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.terms-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.terms-group {
+    margin-bottom: 40px;
+    background-color: var(--card-bg);
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.terms-group h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.terms-group h2 i {
+    color: var(--secondary-color);
+}
+
+.terms-group p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.terms-group ul {
+    margin: 15px 0 15px 20px;
+}
+
+.terms-group li {
+    list-style: none;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.terms-group li:before {
+    content: "✓";
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.acceptance-box {
+    background-color: rgba(255, 193, 7, 0.1);
+    border-left: 8px solid var(--primary-color);
+    padding: 20px 25px;
+    margin-top: 50px;
+    color: var(--text-color);
+}
+
+.acceptance-box h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acceptance-box p {
+    font-size: 1.05rem;
+}
+
+/* Responsive Terms Page */
+@media (max-width: 768px) {
+    .terms-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .terms-group {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .terms-section {
+        padding: 80px 0 40px;
+    }
+
+    .terms-group h2 {
+        font-size: 1.3rem;
+    }
+}
