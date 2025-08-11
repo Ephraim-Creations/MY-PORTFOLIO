@@ -926,7 +926,7 @@ input:checked + .slider:before {
     flex-direction: column;
   }
 
-  /*image switcher*/
+  /*CTA image */
 .faqimage{
   max-width: 600px;
   width: 100%;
@@ -941,16 +941,7 @@ input:checked + .slider:before {
 .faqimage img{
   width: 100%;
 }
-/* Smooth crossfade for the CTA image */
-#themeImage {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
 
-/* Optional: fade-out class for JS-controlled transition */
-.fade-out {
-  opacity: 0;
-}
 
 
 
