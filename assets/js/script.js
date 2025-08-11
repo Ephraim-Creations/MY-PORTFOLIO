@@ -275,30 +275,3 @@ document.addEventListener('DOMContentLoaded', () => {
     modalImg.src = '';
   });
 });
-
-//Below is javascript that switched the black and white images with dialogues
-  const themeImage = document.getElementById("themeImage");
-  const desktopSwitcher = document.getElementById("theme-switcher");
-  const mobileSwitcher = document.getElementById("mobile-theme-switcher");
-
-  function updateThemeImage() {
-    const isDarkMode = document.body.classList.contains("dark-mode");
-
-    themeImage.src = isDarkMode
-      ? "assets/images/lets-talk-dark.png"
-      : "assets/images/lets-talk-light.png";
-  }
-
-  // Watch for theme toggles
-  desktopSwitcher.addEventListener("change", () => {
-    document.body.classList.toggle("dark-mode");
-    updateThemeImage();
-  });
-
-  mobileSwitcher.addEventListener("change", () => {
-    document.body.classList.toggle("dark-mode");
-    updateThemeImage();
-  });
-
-  // Optional: run on page load
-  window.addEventListener("DOMContentLoaded", updateThemeImage);
