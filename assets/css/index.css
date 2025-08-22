@@ -7,7 +7,8 @@
     --card-bg: #f8f8f8;
     --footer-bg: #444546;
     --footer-text: #ecf0f1;
-    --shadow: 0 4px 6px rgb(0, 0, 0);
+    --shaddow:0 0px 6px rgba(0, 0, 0, 0.603);
+    --shadow:0 0 15px rgba(0, 0, 0, 0.527);
     --transition: all 0.3s ease;
 }
 
@@ -20,7 +21,10 @@
     --card-bg: #2b2b2b;
     --footer-bg: #202020;
     --footer-text: #ecf0f1;
-    --shadow: 0 4px 6px rgb(119, 119, 119);
+    --shaddow:0 0px 6px rgba(0, 0, 0, 0.603); /*tiny shadow*/
+    --shadow:0 0 15px rgb(0, 0, 0);  /*big shadow*/
+   
+
 }
 
 * {
@@ -40,7 +44,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -52,7 +56,7 @@ body {
     left: 0;
     width: 100%;
     background-color: var(--header-bg);
-    box-shadow: var(--shadow);
+    box-shadow:0 4px 15px rgba(34, 34, 34, 0.137);
     z-index: 1000;
     padding: 15px 0;
     transition: var(--transition);
@@ -316,128 +320,177 @@ input:checked + .slider:before {
 
 /* Hero Section */
 .hero {
-    position: relative;
-    height: 90vh;
-    min-height: 600px;
-    background: url('../images/my-hero-section.png') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
-    overflow: hidden; /* Ensures nothing spills outside */
+  padding:0rem auto;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/assets/images/ai-server-room.png") no-repeat center center/cover;
+  color: white;
+  overflow: hidden;
+   transition: background-image 2s ease-in-out; /* fade effect */
 }
 
-/* Dark overlay */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000cb; /* Adjust opacity (0.6) to make darker/lighter */
-    z-index: 1;
+/* Dark Overlay */
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.404);
+  z-index: 1;
 }
 
-/* Hero content - needs higher z-index than overlay */
-.hero-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    padding: 0 20px;
+/* Hero Content Container */
+.hero-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1300px;
+  gap: 1rem;
 
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+/* Hero Text */
+.hero-text {
+  flex: 1;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    max-width: 1000px;       /* Sets the maximum width of the paragraph */
-    margin-left: auto;     /* Centers the paragraph horizontally */
-    margin-right: auto;
-    line-height: 1.6;
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 500px;
 }
 
 .hero-btns {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-/*iphone 4*/
-@media (max-width: 320px){
-  .hero-btns {
-    flex-direction: coumn;
-  }
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-  .hero-content {
-    padding: 1rem;
-  }
-
-  .hero h1 {
-    font-size: 1rem;
-  }
-
-  .hero-content p {
-    font-size: 1.9rem;
-  }
-
+/* Hero Image */
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Buttons (your provided styles) */
 .btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 500;
-    transition: var(--transition);
-    animation:gentleTilt 2s infinite;
-
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: var(--transition);
+  animation: gentleTilt 2s infinite;
 }
-
 .btn:hover {
-    background-color: #FF0080;
-    color: #fff;
-    transform: translateY(-3px);
+  background-color: #ff0080;
+  transform: translateY(-3px);
 }
-.secondary-btn{
-    padding: 12px 30px;
-    text-decoration: none;
-    background-color: transparent;
-    color: var(--white);
-    border-radius: 5px;
-    border: 2px solid #fff;
+
+.secondary-btn {
+  padding: 12px 30px;
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--white);
+  border-radius: 5px;
+  border: 2px solid #fff;
 }
 .secondary-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
-#agencyBtn{
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: var(--transition);
-    animation: pulse 2s infinite;
-  }
-#agencyBtn:hover{
-     background-color: #FF0080;
-    color: #fff;
-    transform: translateY(-3px);
+#agencyBtn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: var(--transition);
+  animation: pulse 2s infinite;
 }
-/* ===== THEME VARIABLES ===== */
+#agencyBtn:hover {
+  background-color: #ff0080;
+  transform: translateY(-3px);
+}
+
+/* ✅ Responsiveness */
+@media (max-width: 1024px) {
+  .hero{
+   height: fit-content;
+   margin-top: 1rem;
+
+  }
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    order: 1;
+  }
+
+  .hero-img {
+    order: 2;
+    margin-bottom: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    margin: 0 auto 20px;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+/* ===== About===== */
 :root {
     /* Light Theme */
     --about-bg: #f8f9fa;
@@ -639,7 +692,7 @@ input:checked + .slider:before {
     gap: 10px;
     padding: 10px 18px;
     background: var(--about-accent);
-    color: white !important;
+    color: white;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 500;
@@ -758,7 +811,7 @@ input:checked + .slider:before {
     }
     
     .profile-image-container {
-      max-width: 300px;
+      max-width: 500px;
       margin: 0 auto;
     }
     .skill-tag {
@@ -882,7 +935,7 @@ input:checked + .slider:before {
 .project-card {
   background-color: var(--card-bg);
   color: var(--text-color);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shaddow);
   padding: 1rem;
   border-radius: 10px;
   transition: var(--transition);
@@ -976,7 +1029,7 @@ input:checked + .slider:before {
     margin-bottom: 15px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shaddow);
     background-color: var(--card-bg);
 }
 
@@ -1058,7 +1111,7 @@ input:checked + .slider:before {
     padding: 1rem;
     text-align: center;
     position: relative;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: var(--shaddow);
   }
   .plan h3 {
     margin-top: 0;
@@ -1281,7 +1334,7 @@ body.modal-open {
   background-color: var(--card-bg);
   color: var(--text-color);
   border-radius: 12px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shaddow);
   margin: 3rem auto;
   padding: 4rem 1.5rem;
   max-width: 900px;
@@ -1444,7 +1497,7 @@ body.modal-open {
 .footer-bottom {
     text-align: center;
     padding: 20px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(95, 95, 95, 0.596);
 }
 .footer-bottom p{
  transition: transform 0.2s ease-in-out, background-color 0.3s;
@@ -1534,7 +1587,6 @@ body.modal-open {
     --header-green: #075E54;
     --text-dark: #333;
     --text-light: #fff;
-    --shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
 
   /* Widget Container */

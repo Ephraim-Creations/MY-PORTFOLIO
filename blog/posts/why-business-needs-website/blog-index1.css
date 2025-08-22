@@ -1,0 +1,52 @@
+.blog-post-container {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+  line-height: 1.8;
+}
+
+.blog-post-container h1 {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  color: var(--primary-color);
+}
+
+.blog-post-container h2 {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.blog-post-container p {
+  margin: 1rem 0;
+  font-size: 1.05rem;
+}
+
+.blog-meta {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.blog-cover {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  margin-top: 2rem;
+}
+
+.back-link a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}

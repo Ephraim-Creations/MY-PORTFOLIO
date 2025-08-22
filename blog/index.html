@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-<!-- Basic Meta -->
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Explore digital eBooks from Ephraim Mutwiri, including The Web Design Introduction and other guides to grow your brand or creative career." />
-<meta name="robots" content="index, follow" />
-<title>eBooks | Ephraim Mutwiri</title>
-<link rel="canonical" href="https://ephraimworks.online/ebooks/" />
+  <!-- Essential Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Read articles on web design, branding, digital marketing, and creative strategies. Stay inspired and updated through my blog." />
+  <meta name="robots" content="index, follow" />
+  <title>Blog - Ephraim Mutwiri</title>
+  <link rel="canonical" href="https://www.ephraimworks.online/blog/" />
 
-<!-- Open Graph for Social Media -->
-<meta property="og:title" content="Ephraim Mutwiri | Powerful E-Books to Elevate Your Skills" />
-<meta property="og:description" content="Discover practical, easy-to-read e-books on business, design, and digital skills — crafted to help you grow, create, and succeed in today’s online world." />
-<meta property="og:image" content="https://www.ephraimworks.online/my-link-cover.png" />
-<meta property="og:image:width" content="600" />
-<meta property="og:image:height" content="700" />
-<meta property="og:url" content="https://www.ephraimworks.online/" />
-<meta property="og:type" content="website" />
+  <!-- Open Graph for Social Media -->
+  <meta property="og:title" content="Ephraim Mutwiri | Blog" />
+  <meta property="og:description" content="Insights, tutorials, and stories on web design, branding, and digital creativity. Discover tips and lessons from my journey." />
+  <meta property="og:image" content="https://www.ephraimworks.online/my-link-cover.png" />
+  <meta property="og:url" content="https://www.ephraimworks.online/blog/" />
+  <meta property="og:type" content="article" />
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Ephraim Mutwiri | Powerful E-Books to Elevate Your Skills" />
-<meta name="twitter:description" content="Practical, inspiring e-books on business, design, and digital skills — learn, create, and succeed in the online world." />
-<meta name="twitter:image" content="https://www.ephraimworks.online/my-link-cover.png" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ephraim Mutwiri | Blog" />
+  <meta name="twitter:description" content="Practical tips, design insights, and creative ideas from Ephraim Mutwiri’s blog." />
+  <meta name="twitter:image" content="https://www.ephraimworks.online/my-link-cover.png" />
 
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/index.css" />
+  <link rel="stylesheet" href="/assets/css/blogpage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet" />
 
-<!-- Stylesheets -->
-<link rel="stylesheet" href="../assets/css/ebooks.css" />
-<link rel="stylesheet" href="../assets/css/index.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet" />
-
-<!-- Favicon -->
-<link rel="icon" href="/assets/images/favicon.png" type="image/png" />
-<link rel="apple-touch-icon" href="/assets/images/favicon.png" />
-
+  <!-- Favicons -->
+  <link rel="icon" href="../assets/images/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../assets/images/favicon.png" />
 </head>
+
 
 <body>
 
-        <!-- Sticky Header -->
+    <!-- Sticky Header -->
 <header class="sticky-header">
     <div class="container">
         <div class="logo-container">
@@ -61,7 +57,7 @@
             <li><a href="https://linktr.ee/ephraimcreationsKE">My Socials</a></li>
         </ul>
         </nav>
-        <div class="theme-toggle">
+        <div class="theme-toggle" id="theme-toggle">
             <i class="fas fa-sun"></i>
             <label class="switch">
                 <input type="checkbox" id="theme-switcher">
@@ -101,64 +97,46 @@
             <li><a href="https://linktr.ee/ephraimcreationsKE">My Socials</a></li>
         </ul>
     </nav>
-    
-    <main class="ebook-store">
-        <h1 class="page-title">Featured eBooks</h1>
-        
-        <div class="ebook-grid">
-<!-- eBook 1 -->
-<div class="ebook-card">
-    <div class="free-badge">Free</div>
-    <div class="ebook-cover">
-        <img src="/assets/images/Web design Ebook.jpg" alt="web design ebook">
-    </div>
-    <h3 class="ebook-title">Web Design Introduction</h3>
-    <p class="ebook-tags">Unlock the secrets of powerful website building with this beginner-friendly eBook.</p>
-    <button class="view-more-btn" data-modal="modal1">View More</button>
-</div> 
 
 
-            
-            <!-- eBook 2 -->
-            <div class="ebook-card">
+    <main class="blog-container">
+  <h1 class="blog-title">My Blog</h1>
+  <p class="blog-subtitle">Latest updates, tutorials & insights <br>
+      <i><b>click post to read more</b></i>
+  </p>
 
-                <h3 class="ebook-title">Stay tuned for more!</h3>
 
+  <!-- Blog listing will load here -->
+  <div id="blog-list" class="blog-grid"></div>
+</main>
+
+<script>
+  // Fetch and display posts
+  fetch('posts.json')
+    .then(response => response.json())
+    .then(posts => {
+      const container = document.getElementById('blog-list');
+      posts.forEach(post => {
+        const card = document.createElement('article');
+        card.classList.add('blog-card');
+        card.innerHTML = `
+          <a href="posts/${post.slug}/" class="blog-link">
+            <img src="../assets/blog-img/${post.thumbnail}" alt="${post.title}" class="blog-thumb" />
+            <div class="blog-content">
+              <h2 class="blog-post-title">${post.title}</h2>
+              <p class="blog-excerpt">${post.excerpt}</p>
+              <span class="blog-date">${post.date}</span>
             </div>
+          </a>
+        `;
+        container.appendChild(card);
+      });
+    })
+    .catch(error => console.error('Error loading posts:', error));
+</script>
 
-        </div>
-    </main>
-    
-    <!-- Modals -->
-    <!-- Modal 1 -->
-    <div class="modal" id="modal1">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div class="modal-cover">
-                <img src="../assets/images/Web design Ebook.jpg" alt="Ebooks by Ephraim">
-            </div>
-            <div class="modal-body">
-               <h2>Web Design Introduction</h2>
-             <p>
-                Whether you're building your first site on <strong>Wix</strong> or getting started with <strong>WordPress</strong>, this guide walks you through the key principles, tools, and layout strategies etc.
-             </p>
-             <ul>
-             <li>✅ Understand core design concepts (UX/UI)</li>
-             <li>✅ Learn the differences between Wix & WordPress</li>
-             <li>✅ Best practices for mobile responsiveness</li>
-             <li>✅ SEO tips for beginners</li>
-             </ul>
-             <p>
-                Whether you're a business owner, student, or aspiring freelancer, this eBook helps you create beautiful, functional websites without confusion.
-             </p>  
-             <a href="https://wa.me/254112268873?text=Hi%20Ephraim%2C%20I'm%20interested%20in%20your%20Web%20Design%20Introduction%20eBook" class="ebk-whatsapp">
-             <i class="fab fa-whatsapp"></i> Get a copy
-             </a>
-            </div>
-        </div>
-    </div>
-    
-        <!-- Footer -->
+
+    <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-content">
@@ -177,9 +155,9 @@
         <h3>Quick Links</h3>
   <ul>
   <li><a href="/#projects">Projects</a></li>
-  <li><a href="/#pricing">Pricing</a></li>
   <li><a href="/blog/">Blog</a></li>
-  <li><a href="/ebooks/">E-books</a></li>
+  <li> <a href="/ebooks/">E-books</a></li>
+  <li><a href="/#pricing">Pricing</a></li>
   <li><a href="/terms/">Terms of service</a></li>
 
 </ul>
@@ -228,7 +206,7 @@
 <div class="whatsapp-widget">
   <div class="widget-header">
     <div class="profile-info">
-      <img src="../assets/images/Eph icon.png" alt="Ephraim Mutwiri" class="profile-img">
+      <img src="assets/images/Eph icon.png" alt="Ephraim Mutwiri" class="profile-img">
       <div>
         <div class="profile-name">Ephraim Mutwiri</div>
         <div class="profile-status">Typically replies within a day</div>
@@ -268,9 +246,11 @@
     <i class="fas fa-arrow-up"></i>
 </button>
 
- <script src="../assets/js/ebooks.js"></script>
- <script src="../assets/js/script.js"></script>
-<script src="../assets/js/whatsapp widget.js"></script>
 
-</body>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/whatsapp widget.js"></script>
+    <script src="../assets/js/ebooks.js"></script>
+    <script src="../assets/js/testimonials.js"></script>
+
+  </body>
 </html>

@@ -293,3 +293,25 @@ document.addEventListener('DOMContentLoaded', () => {
     modalImg.src = '';
   });
 });
+
+
+//switching images (hero section)
+// List of tech-related images
+const heroImages = [
+  "assets/images/ai-biz-desk.png",
+  "assets/images/ai-biz-man.png",
+  "assets/images/ai-server-room.png",
+  "assets/images/ai-waves.png",
+];
+
+let currentIndex = 0;
+const heroSection = document.querySelector(".hero");
+
+// Initial background
+heroSection.style.backgroundImage = `url(${heroImages[currentIndex]})`;
+
+// Change background every 5s
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % heroImages.length;
+  heroSection.style.backgroundImage = `url(${heroImages[currentIndex]})`;
+}, 8000);

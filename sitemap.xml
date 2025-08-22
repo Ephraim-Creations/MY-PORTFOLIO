@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.ephraimworks.online/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://www.ephraimworks.online/blog/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog posts (dynamic) -->
+  <!-- If your posts are in posts.json, you may generate links from it -->
+  <!-- Example placeholder URLs -->
+  <url>
+    <loc>https://www.ephraimworks.online/blog/posts/monetize-design-skills-2025/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ephraimworks.online/blog/posts/showing-up-for-your-business/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ephraimworks.online/blog/posts/why-business-needs-website/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Ebooks -->
+  <url>
+    <loc>https://www.ephraimworks.online/ebooks/</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Terms -->
+  <url>
+    <loc>https://www.ephraimworks.online/terms/</loc>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

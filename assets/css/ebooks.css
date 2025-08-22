@@ -1,27 +1,3 @@
-:root {
-  --primary-color: #ce18fc;
-  --secondary-color: #2ecc71;
-  --text-color: #333;
-  --bg-color: #fff;
-  --header-bg: #ffffff;
-  --card-bg: #f8f8f8;
-  --footer-bg: #444546;
-  --footer-text: #ecf0f1;
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.712);
-  --transition: all 0.3s ease;
-}
-
-[data-theme="dark"] {
-  --primary-color: #d421b6;
-  --secondary-color: #582ecc;
-  --text-color: #ecf0f1;
-  --bg-color: #1a1a1a;
-  --header-bg: #1a1a1a;
-  --card-bg: #414141;
-  --footer-bg: #1a1a1a;
-  --footer-text: #ecf0f1;
-  --shadow: 0 4px 6px rgba(99, 99, 99, 0.87);
-}
 
 * {
   margin: 0;
@@ -80,7 +56,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     width: 80%;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
 }
 

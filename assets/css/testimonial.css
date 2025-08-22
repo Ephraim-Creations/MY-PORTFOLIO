@@ -5,13 +5,11 @@
     --green: #119133;
     --text: #333;
     --bg: #fff;
-    --shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 [data-theme="dark"] {
     --text: #f1f1f1;
     --bg: #1a1a1a;
-    --shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 
@@ -41,7 +39,7 @@
     background: var(--card-bg);
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shaddow);
 }
 
 .review-header {
