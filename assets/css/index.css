@@ -9,7 +9,7 @@
     --footer-text: #ecf0f1;
     --shaddow:0 0px 6px rgba(0, 0, 0, 0.603);
     --shadow:0 0 15px rgba(0, 0, 0, 0.527);
-    --transition: all 0.3s ease;
+    --transition: all 2s ease;
 }
 
 [data-theme="dark"] {
@@ -329,7 +329,7 @@ input:checked + .slider:before {
   background: url("/assets/images/ai-server-room.png") no-repeat center center/cover;
   color: white;
   overflow: hidden;
-   transition: background-image 2s ease-in-out; /* fade effect */
+   transition:var(--transition); /* fade effect */
 }
 
 /* Dark Overlay */
@@ -387,7 +387,7 @@ input:checked + .slider:before {
 }
 
 .hero-img img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   border-radius: 10px;
   object-fit: cover;

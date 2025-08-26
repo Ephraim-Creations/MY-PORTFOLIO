@@ -314,4 +314,4 @@ heroSection.style.backgroundImage = `url(${heroImages[currentIndex]})`;
 setInterval(() => {
   currentIndex = (currentIndex + 1) % heroImages.length;
   heroSection.style.backgroundImage = `url(${heroImages[currentIndex]})`;
-}, 8000);
+}, 6000);
