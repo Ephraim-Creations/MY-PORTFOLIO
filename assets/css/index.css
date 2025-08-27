@@ -5,7 +5,7 @@
     --bg-color: #fff;
     --header-bg: rgb(255, 255, 255);
     --card-bg: #f8f8f8;
-    --footer-bg: #444546;
+    --footer-bg: #242424;
     --footer-text: #ecf0f1;
     --shaddow:0 0px 6px rgba(0, 0, 0, 0.603);
     --shadow:0 0 15px rgba(0, 0, 0, 0.527);
@@ -19,7 +19,7 @@
     --bg-color: #1a1a1a;
     --header-bg: rgb(26, 26, 26);
     --card-bg: #2b2b2b;
-    --footer-bg: #202020;
+    --footer-bg: #141414;
     --footer-text: #ecf0f1;
     --shaddow:0 0px 6px rgba(0, 0, 0, 0.603); /*tiny shadow*/
     --shadow:0 0 15px rgb(0, 0, 0);  /*big shadow*/
@@ -553,10 +553,6 @@ input:checked + .slider:before {
     animation: softPulse 5s infinite ease-in-out;
   }
 
-    .profile-image:hover{
-        animation: pulse 2s infinite;
-
-    }
 
   /* Decorative Circles */
   .circle-decor {
