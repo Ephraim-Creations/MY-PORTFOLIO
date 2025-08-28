@@ -237,6 +237,8 @@ input:checked + .slider:before {
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid var(--primary-color);
+    transition: var(--transition);
+
 }
 
 .close-nav {
@@ -517,6 +519,8 @@ input:checked + .slider:before {
     background: var(--about-bg);
     position: relative;
     overflow: hidden;
+    transition: var(--transition);
+
   }
   
   .about-container {
@@ -979,6 +983,7 @@ input:checked + .slider:before {
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: var(--transition);
   }
 
   /*CTA image */
@@ -996,9 +1001,6 @@ input:checked + .slider:before {
 .faqimage img{
   width: 100%;
 }
-
-
-
 
 .faq h2 {
     text-align: center;
@@ -1027,6 +1029,7 @@ input:checked + .slider:before {
     overflow: hidden;
     box-shadow: var(--shaddow);
     background-color: var(--card-bg);
+    transition: var(--transition);
 }
 
 .faq-question {
@@ -1078,6 +1081,7 @@ input:checked + .slider:before {
 .pricing {
     background: var(--section-bg);
     padding: 1rem 0;
+    transition: var(--transition);
   }
   .pricing h2 {
     text-align: center;
@@ -1108,6 +1112,7 @@ input:checked + .slider:before {
     text-align: center;
     position: relative;
     box-shadow: var(--shaddow);
+    transition: var(--transition);
   }
   .plan h3 {
     margin-top: 0;
@@ -1447,6 +1452,7 @@ body.modal-open {
     color: var(--footer-text);
     padding: 60px 0 0;
     padding-bottom: 60px;
+    transition: var(--transition);
   }
 
 .footer-content {
