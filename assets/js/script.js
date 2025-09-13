@@ -298,10 +298,10 @@ document.addEventListener('DOMContentLoaded', () => {
 //switching images (hero section)
 // List of tech-related images
 const heroImages = [
-  "assets/images/ai-biz-desk.png",
-  "assets/images/ai-biz-man.png",
-  "assets/images/ai-server-room.png",
-  "assets/images/ai-waves.png",
+  "assets/images/ai-biz-desk.jpg",
+  "assets/images/ai-biz-man.jpg",
+  "assets/images/ai-server-room.jpg",
+  "assets/images/ai-waves.jpg",
 ];
 
 let currentIndex = 0;
@@ -315,3 +315,22 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % heroImages.length;
   heroSection.style.backgroundImage = `url(${heroImages[currentIndex]})`;
 }, 6000);
+
+// Hero video setup
+  const video = document.getElementById("heroVideo");
+  const videos = [ 
+    "/videos/Building-digital-success.mp4",
+    "/videos/Steps-to-build-a-website.mp4",
+  ];
+  let current = 0;
+
+  // Load the first video
+  video.src = videos[current];
+  video.play();
+
+  // When video ends, switch to the next
+  video.addEventListener("ended", () => {
+    current = (current + 1) % videos.length; // loop back
+    video.src = videos[current];
+    video.play();
+  });

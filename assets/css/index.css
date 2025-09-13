@@ -341,7 +341,7 @@ input:checked + .slider:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.445);
+  background: rgba(36, 36, 36, 0.445);
   z-index: 1;
 }
 
@@ -386,14 +386,21 @@ input:checked + .slider:before {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center; /* centers vertically */
+  padding: 20px;
 }
 
-.hero-img img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
+.hero-img video {
+  width: 50%;               /* responsive full width */
+  max-width: 600px;          /* don’t let it get too wide */
+  height: auto;              /* auto keeps aspect ratio */
+  border-radius: 12px;       /* rounded corners */
+  object-fit: cover;         /* neat crop if needed */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* subtle shadow */
 }
+
+
+
 
 /* Buttons (your provided styles) */
 .btn {
