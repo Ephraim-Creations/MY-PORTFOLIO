@@ -391,7 +391,7 @@ input:checked + .slider:before {
 }
 
 .hero-img video {
-  width: 50%;               /* responsive full width */
+  width: 60%;               /* responsive full width */
   max-width: 600px;          /* don’t let it get too wide */
   height: auto;              /* auto keeps aspect ratio */
   border-radius: 12px;       /* rounded corners */
